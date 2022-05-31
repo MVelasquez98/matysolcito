@@ -14,7 +14,6 @@ body {
 #cuenta {
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
 }
 
 .simply-section {
@@ -38,4 +37,10 @@ body {
     display: none;
     font-weight: 300;
     font-size: 20px;
+}
+
+.tiempo {
+    width: 45px;
+    height: 45px;
+    margin: 0 20px;
 }
