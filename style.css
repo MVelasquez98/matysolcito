@@ -4,10 +4,34 @@
     box-sizing: border-box;
 }
 
+:root {
+    --dorado: #d4a413;
+}
+
 body {
     background: #EFEFEF;
     color: #363639;
     font-family: 'Work Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'Satisfy', cursive;
+    src: 'Satisfy-Regular.ttf'
+}
+/*? --Carrousel */
+.carousel-indicators {
+    bottom: -42px;
+}
+/* ?---- Titulos */
+.titulo {
+    font-family: 'Satisfy';
+    font-size: 43px;
+}
+.bg-dorado{
+    background-color: var(--dorado) !important;
+}
+.color-dorado{
+    color: var(--dorado) !important;
 }
 
 /* ? ----- Cuenta Regresiva ----- */
