@@ -18,6 +18,13 @@ body {
     font-family: 'Satisfy', cursive;
     src: 'Satisfy-Regular.ttf'
 }
+.hr{
+    border: none;
+    height: 6px;
+    width: 100%;
+    color: #f3c332;
+    background-color: #f3c332;
+}
 /*? --Carrousel */
 .carousel-indicators {
     bottom: -42px;
