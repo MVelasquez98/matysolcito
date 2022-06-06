@@ -18,26 +18,36 @@ body {
     font-family: 'Satisfy', cursive;
     src: 'Satisfy-Regular.ttf'
 }
-.hr{
+
+.boton {
+    border-radius: 20px !important;
+    background-color: #efb810;
+    border-color: transparent;
+}
+.hr {
     border: none;
     height: 6px;
     width: 100%;
     color: #f3c332;
     background-color: #f3c332;
 }
+
 /*? --Carrousel */
 .carousel-indicators {
     bottom: -42px;
 }
+
 /* ?---- Titulos */
 .titulo {
     font-family: 'Satisfy';
     font-size: 43px;
 }
-.bg-dorado{
+
+.bg-dorado {
     background-color: var(--dorado) !important;
 }
-.color-dorado{
+
+.color-dorado {
     color: var(--dorado) !important;
 }
 
