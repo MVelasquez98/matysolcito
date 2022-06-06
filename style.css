@@ -24,6 +24,7 @@ body {
     background-color: #efb810;
     border-color: transparent;
 }
+
 .hr {
     border: none;
     height: 6px;
@@ -41,6 +42,10 @@ body {
 .titulo {
     font-family: 'Satisfy';
     font-size: 43px;
+}
+
+.text-satisfy {
+    font-family: 'Satisfy'
 }
 
 .bg-dorado {
