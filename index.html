@@ -1,199 +1,394 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mat & Solcito</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Mat & Solcito</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-</head>
-
-<body>
-  <div id="cac" class="container">
-    <div class="row d-flex justify-align-center">
-      <div class="col-12 d-flex justify-content-center">
-        <video class="vh-100" width="375" height="700" autoplay muted loop id="videotest">
-          <source src="https://github.com/mvelasquez98/invitacion/raw/master/img/lv_0_20220531203807.mp4"
-            type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="col-12 text-center pt-5 text-satisfy color-dorado h1">Nos casamos el 18/11/22!!</div>
-      <div class="col-12 text-center pb-3 h4">Faltan...</div>
-      <div id="cuenta"></div>
-      <div class="d-flex  justify-content-center">
-        <div class="tiempo d-flex justify-content-center align-items-center">Dias</div>
-        <div class="tiempo d-flex justify-content-center align-items-center">Horas</div>
-        <div class="tiempo d-flex justify-content-center align-items-center">Minutos</div>
-        <div class="tiempo d-flex justify-content-center align-items-center">Segundos</div>
-      </div>
-      <div class="col-12 text-center p-5">
-        <div class="text-center titulo color-dorado">Ceremonia</div>
-        <div>La conferencia de boda se realizará el <b>Viernes 18 de Noviembre</b> a las 19:00hs. en la quinta
-          <b>"Los Azahares Eventos"</b>, Av. Pedro Dreyer 1425, Monte Grande, Provincia de Buenos Aires
+  <body>
+    <div id="cac" class="container">
+      <div class="row d-flex justify-align-center">
+        <div class="col-12 d-flex justify-content-center">
+          <video
+            class="vh-100"
+            width="375"
+            height="700"
+            loop
+            id="videotest"
+          >
+            <source
+              src="https://github.com/mvelasquez98/invitacion/raw/master/img/lv_0_20220531203807.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
-      </div>
-      <div class="col-12 text-center ps-5 pe-5 pb-5">
-        <div></div>
-        <div>Luego de la conferencia, seguiremos festejando en la misma quinta
-          <b>"Los Azahares Eventos"</b>, Av. Pedro Dreyer 1425, Monte Grande, Provincia de Buenos Aires
+        <div class="col-12 text-center pt-5 text-satisfy color-dorado h1">
+          Nos casamos el 18/11/22!!
         </div>
-      </div>
-      <div class="col-12 d-flex justify-content-center">
-        <a class="btn btn-primary boton" href="https://goo.gl/maps/dhqzBJwjPAQ1tVBY6" role="button" target="_blank">Como
-          llegar</a>
-      </div>
-      <div class="col-12 d-flex text-center p-5">
-        <div class="col-6">
-          <div><img src="img/DRESS-CODE_1.svg" height="140" width="140"></div>
-          <div class="text-satisfy h3">DressCode:</div>
-          <div class="fw-bold text-uppercase color-dorado">Elegante</div>
-        </div>
-        <div class="col-6">
-          <div><img src="img/PARTY-CODE_1.svg" height="140" width="140"></div>
-          <div class="text-satisfy h3">PartyCode:</div>
-          <div class="fw-bold text-uppercase color-dorado">Sin Niños</div>
-        </div>
-      </div>
-      <div class="col-12 bg-dorado p-5">
-        <div class="text-center pb-3 titulo text-white">Bellos recuerdos</div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
+        <div class="col-12 text-center pb-3 h4">Faltan...</div>
+        <div id="cuenta"></div>
+        <div class="d-flex justify-content-center">
+          <div class="tiempo d-flex justify-content-center align-items-center">
+            Dias
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item container active">
-              <img
-                src="https://lh3.googleusercontent.com/G_wBy5qyr5xxCZvzEMUBOcyyXI8esiu9jRh-KqfUrd60w5Skl3CWVnTs2lRPy7cKmaoegsgm3fwufIv2VwsxsXu6C-KCVRlCW6T60bpypUWUeqJIjjeVeE5PSRz_FFvleGSudrkv7aTxAlBZOEQpKUAkGN5-1nvSec7qoAGb2s1fU5OZZfXyYXszT_IlYWfnxFt4MHFqduT-M4H_3dVSTsdX4T3lVMGWwadiaygwjAGuAvUpyhqYPfhta0TsTWYwBcwAst1hR8FmZFs7pHVuo4-2-mZpe8k07f4CsGWqflb2A6h_hLBATOiA6hDw1Lg6wPaCLG895duZW48PX7IoRc5A1hQoW-ziLO7xQitis0tS7_6KlrHM8geuAWH7TSCh4-gs-tlUqq0ySBgF1DndSoAOQrUl9AWELtiuDkzueXaVul5F6qf3qV23WCqR6eM7gj97mOAb-Zswu9han46ObLnMk9DRe_hDdKs7MRyBhvsHwL_iWFDUI8m4lJapucp_eTtLwFcPimC5qlSP59WT7FB4b18lbiRmONdlTNQ4Ow8Gc02BndG6izF74YmW0dkqcOboSm8fC2jAZadbypKYSD50Hm6lQEczof8HWPjlp6Aej1s478V41gdak3p0BmfVVvTyAq4mq70wJu3vqOySk5ZwmLVf-_mJyyS38Fn11qUptMy2xSn3wsK5RBVpLh1nCOYlwIhNFn3pmRleItdwhvgd7jS38r90-5Uq_4n_T1hF1SyDLofCDcFswb-OHKwii-FBxZlbOe5VIL41e_tpbTZ3Fr3f48-vLzROL-RDhpNNrmrpf6w1BvV-92yUgUg_Tvm16YzhURDwzzbrFPZt_YAaaLduML_qnu_zhHU3gQDR=w660-h880-no?authuser=0"
-                class="mx-auto d-block" alt="..." height="300">
-            </div>
-            <div class="carousel-item container">
-              <img
-                src="https://lh3.googleusercontent.com/PtxVKq_kyWqSIr2-UNkmg5UXa2c84DIxg9NDpkrQFTMmVMt3e6_RNEpAkk5jVdspczt9CimiFamCrRbdMoJHaQJtxmnBYAEpNLd-wPtpTLkSYBz3vVSqlzprrZHYdtUtgCcB-DqH_KAlN6PZUqtypLD7fjK_-Wl8vdwJekOHCrLOhe5VloMTXbPWiHcdqz9TmqvWO4SFJqoPhl9isPuxDzZv2JXPaKbOXIeDaQMhN-zrNSGIo0Vs4xpOMp7-rC2AeSzjpoXstmdjnedBlfPCs0rSM_T-M1o78jVQlvLR8XbhsOQ5fLNvi5hBUJskre5WlnXY2q-Fy5VsjO8xuyJvROvMD34Mw9Ts3nWqS0J8vYLBwGiH7Jh3T3cNTc5uP545EqtuGxCHYYEFumhb7p5JhCA8AfH3E7Q3ucAqV2_YqSE7Vo4rS4-CWv-M3eIVI7iNWBp2U3uzgHOm7oLOtXE7PVcHH5gwHWUGYt4CvvKKysNjuaFPxys-01gReYdXtp3rmvkEkKEetS7yqIkAA_EdePar1zbET0npbGWjDOAuif3zitYM3Kyb8dp1gerLmE40F-1SkwXEtCn6nu-Cqrrbn_MaUuqT8RdIK3Ct1MXCdbqhU4XB1Xvl5QCIUoV5R4oJ9S94lHlsHdLUsZeT1qZIYVW_dXr1wD-vSf9A2GjyKPkNyshUbzhm03D6GupJ50YyeRFD2bZ7V6XoeBRI6qDnzzGdQmmMqACQ2JlwuSsa5THwfWpyPXmtykkb6guZvPGZG5E_SCx8h8JilNIzEQwI6wsSIPXCz_Y3ncd9HP7N5EA7AV9roYZJVIiZhC-Edhf-gEZtgOdtRVLVBgmbsEBogU2VLWkdAYRcPakUv1-jTd-r=w660-h880-no?authuser=0"
-                class="mx-auto d-block" alt="..." height="300">
-            </div>
-            <div class="carousel-item container">
-              <img
-                src="https://lh3.googleusercontent.com/J89Fm1SDaLxgXh24enyP2yvVZatx4RoBrXtovNa5f1-dY04f7sTouyOjT-WC2EJj9QOk90bivp5y2gI2PX3RfLDdJy3ylXXSpPwL0n2Uw2CYlHRo-CEPg5FRtG1MNorxhP1b5bqZg6jszQnsZFB4J2bZBlH0IPgWAoCAkajSpENLCDwSuv13JCGfhfp3TjBNWCseoUAR2Oe_y8fqLcWrbcemtpONSQAI2iR0jKgx1GdupvbCVkgFAMNUs-NZNNVuxtLDAIRbEysutS4JwHaqVmrqAnMK1y_HTWHueBNnHvUAbAXx23gvTyXYHfdSjlF32D-l9XOfN8kwybMWp-2OYMz1NppcjV2A-qUnCC4P-YL9NyzJsfdjE3eQ-OMwAwRTjPbHqyB0TWPUkzyasGy8Amyem9iBBBF-vXKwUAPS8kMP7ASdUa7h990Fbqv_ahJqiVqwlZA25fOT_6b1Lvmbgpb2tArwmOQPMR7jC5YYYE9kHUFDMtd92WJ0tI0T7-W2inJ7E8MZfZ_CRnYeZQiSPoSZx0eT-TOWvZDRJ_qf6YbECI2UIiTBp0lSS7TAN966qc9m9x82AKNACQJFNccxwiP_-pQkhhzCRkcUAD53Qt1j0KSNijtfAaeYyQVt4wFrqDemNOK_yjVEzh79KVNWQ9GMO8VLk1nd7BG-uneHaXMwERTNq1cc6490O7xhMuQ3Dj9A7ny6rqPk4aJHH1uBM9u4FpINQ45M_nCue1fcbR54OW8oox91sJ1WlTzflqJwXaAJ-D-T5Kjz1xvNQX5X38xGau37LjtOdVCelFVa-ib9dkobd0U_O5KbgAOG-vriAkCJq7W3XQYpu1GXB0jEWVaM9RkgFNvNEqPn2HnTD-Ku=w660-h880-no?authuser=0"
-                class="mx-auto d-block" alt="..." height="300">
-            </div>
+          <div class="tiempo d-flex justify-content-center align-items-center">
+            Horas
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      <div class="col-12 p-5">
-        <div class="text-center titulo">Los Testigos</div>
-        <div class="d-flex justify-content-center text-center flex-column p-3">
-          <div class="p-3 pb-5 pt-5">
-            <div class="pb-4"><img src="https://github.com/mvelasquez98/invitacion/raw/master/img/franco-martin.png"
-                height="262" width="262" style="border-radius: 126px;"></div>
-            <div class="text-satisfy h3">Franco Martin</div>
-            <div class="fw-bold color-dorado h5">Testigo del novio, amigo</div>
+          <div class="tiempo d-flex justify-content-center align-items-center">
+            Minutos
           </div>
-          <div class="p-3">
-            <div class="pb-4"><img src="https://github.com/mvelasquez98/invitacion/raw/master/img/yamila-vigetti.png"
-                height="262" width="262" style="border-radius: 126px;"></div>
-            <div class="text-satisfy h3">Yamila Vigetti</div>
-            <div class="fw-bold color-dorado h5">Testigo de la novia, amiga</div>
+          <div class="tiempo d-flex justify-content-center align-items-center">
+            Segundos
           </div>
         </div>
-      </div>
-      <div class="col-12 bg-dorado p-5">
-        <div class="d-flex justify-content-center"><img
-            src="https://github.com/mvelasquez98/invitacion/raw/master/img/gift-07.png" height="140" width="140"></div>
-        <div class="text-center titulo text-white ps-5 pe-5 pb-5">Regalos</div>
-        <div class="bg-white p-3 rounded mb-5">El regalo es opcional, la asistencia es obligatoria :), pero si queres
-          tener
-          un detalle con nosotros, que
-          mejor regalo que nuestra luna de miel. Podes hacernos un
-          depósito o transferencia a nuestra cuenta
+        <div class="col-12 text-center p-5">
+          <div class="text-center titulo color-dorado">Ceremonia</div>
           <div>
-            <a class="btn btn-primary collapsed boton" data-bs-toggle="collapse" href="#datosbancarios" role="button"
-              aria-expanded="false" aria-controls="datosbancarios">
-              Datos Bancarios</a>
+            La conferencia de boda se realizará el
+            <b>Viernes 18 de Noviembre</b> a las 19:00hs. en la quinta
+            <b>"Los Azahares Eventos"</b>, Av. Pedro Dreyer 1425, Monte Grande,
+            Provincia de Buenos Aires
           </div>
-          <div class="#datosbancarios collapse" id="datosbancarios">
-            <div class="card card-body">
-              <div>CBU/CVU: 0000003100064691857174</div>
-              <div>Alias: mat.y.solcito </div>
-              <a class="btn btn-primary boton" href="http://link.mercadopago.com.ar/matysolcito" role="button"
-                target="_blank"><i class="pe-1"><img height="25"
-                    src="https://github.com/mvelasquez98/invitacion/raw/master/img/mercado-pago.png"></i>Mercado
-                Pago</a>
+        </div>
+        <div class="col-12 text-center ps-5 pe-5 pb-5">
+          <div></div>
+          <div>
+            Luego de la conferencia, seguiremos festejando en la misma quinta
+            <b>"Los Azahares Eventos"</b>, Av. Pedro Dreyer 1425, Monte Grande,
+            Provincia de Buenos Aires
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <a
+            class="btn btn-primary boton"
+            href="https://goo.gl/maps/dhqzBJwjPAQ1tVBY6"
+            role="button"
+            target="_blank"
+            >Como llegar</a
+          >
+        </div>
+        <div class="col-12 d-flex text-center p-5">
+          <div class="col-6">
+            <div>
+              <img src="img/DRESS-CODE_1.svg" height="140" width="140" />
+            </div>
+            <div class="text-satisfy h3">DressCode:</div>
+            <div class="fw-bold text-uppercase color-dorado">Elegante</div>
+          </div>
+          <div class="col-6">
+            <div>
+              <img src="img/PARTY-CODE_1.svg" height="140" width="140" />
+            </div>
+            <div class="text-satisfy h3">PartyCode:</div>
+            <div class="fw-bold text-uppercase color-dorado">Sin Niños</div>
+          </div>
+        </div>
+        <div class="col-12 bg-dorado p-5">
+          <div class="text-center pb-3 titulo text-white">Bellos recuerdos</div>
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item container active">
+                <img
+                  src="https://lh3.googleusercontent.com/G_wBy5qyr5xxCZvzEMUBOcyyXI8esiu9jRh-KqfUrd60w5Skl3CWVnTs2lRPy7cKmaoegsgm3fwufIv2VwsxsXu6C-KCVRlCW6T60bpypUWUeqJIjjeVeE5PSRz_FFvleGSudrkv7aTxAlBZOEQpKUAkGN5-1nvSec7qoAGb2s1fU5OZZfXyYXszT_IlYWfnxFt4MHFqduT-M4H_3dVSTsdX4T3lVMGWwadiaygwjAGuAvUpyhqYPfhta0TsTWYwBcwAst1hR8FmZFs7pHVuo4-2-mZpe8k07f4CsGWqflb2A6h_hLBATOiA6hDw1Lg6wPaCLG895duZW48PX7IoRc5A1hQoW-ziLO7xQitis0tS7_6KlrHM8geuAWH7TSCh4-gs-tlUqq0ySBgF1DndSoAOQrUl9AWELtiuDkzueXaVul5F6qf3qV23WCqR6eM7gj97mOAb-Zswu9han46ObLnMk9DRe_hDdKs7MRyBhvsHwL_iWFDUI8m4lJapucp_eTtLwFcPimC5qlSP59WT7FB4b18lbiRmONdlTNQ4Ow8Gc02BndG6izF74YmW0dkqcOboSm8fC2jAZadbypKYSD50Hm6lQEczof8HWPjlp6Aej1s478V41gdak3p0BmfVVvTyAq4mq70wJu3vqOySk5ZwmLVf-_mJyyS38Fn11qUptMy2xSn3wsK5RBVpLh1nCOYlwIhNFn3pmRleItdwhvgd7jS38r90-5Uq_4n_T1hF1SyDLofCDcFswb-OHKwii-FBxZlbOe5VIL41e_tpbTZ3Fr3f48-vLzROL-RDhpNNrmrpf6w1BvV-92yUgUg_Tvm16YzhURDwzzbrFPZt_YAaaLduML_qnu_zhHU3gQDR=w660-h880-no?authuser=0"
+                  class="mx-auto d-block"
+                  alt="..."
+                  height="300"
+                />
+              </div>
+              <div class="carousel-item container">
+                <img
+                  src="https://lh3.googleusercontent.com/PtxVKq_kyWqSIr2-UNkmg5UXa2c84DIxg9NDpkrQFTMmVMt3e6_RNEpAkk5jVdspczt9CimiFamCrRbdMoJHaQJtxmnBYAEpNLd-wPtpTLkSYBz3vVSqlzprrZHYdtUtgCcB-DqH_KAlN6PZUqtypLD7fjK_-Wl8vdwJekOHCrLOhe5VloMTXbPWiHcdqz9TmqvWO4SFJqoPhl9isPuxDzZv2JXPaKbOXIeDaQMhN-zrNSGIo0Vs4xpOMp7-rC2AeSzjpoXstmdjnedBlfPCs0rSM_T-M1o78jVQlvLR8XbhsOQ5fLNvi5hBUJskre5WlnXY2q-Fy5VsjO8xuyJvROvMD34Mw9Ts3nWqS0J8vYLBwGiH7Jh3T3cNTc5uP545EqtuGxCHYYEFumhb7p5JhCA8AfH3E7Q3ucAqV2_YqSE7Vo4rS4-CWv-M3eIVI7iNWBp2U3uzgHOm7oLOtXE7PVcHH5gwHWUGYt4CvvKKysNjuaFPxys-01gReYdXtp3rmvkEkKEetS7yqIkAA_EdePar1zbET0npbGWjDOAuif3zitYM3Kyb8dp1gerLmE40F-1SkwXEtCn6nu-Cqrrbn_MaUuqT8RdIK3Ct1MXCdbqhU4XB1Xvl5QCIUoV5R4oJ9S94lHlsHdLUsZeT1qZIYVW_dXr1wD-vSf9A2GjyKPkNyshUbzhm03D6GupJ50YyeRFD2bZ7V6XoeBRI6qDnzzGdQmmMqACQ2JlwuSsa5THwfWpyPXmtykkb6guZvPGZG5E_SCx8h8JilNIzEQwI6wsSIPXCz_Y3ncd9HP7N5EA7AV9roYZJVIiZhC-Edhf-gEZtgOdtRVLVBgmbsEBogU2VLWkdAYRcPakUv1-jTd-r=w660-h880-no?authuser=0"
+                  class="mx-auto d-block"
+                  alt="..."
+                  height="300"
+                />
+              </div>
+              <div class="carousel-item container">
+                <img
+                  src="https://lh3.googleusercontent.com/J89Fm1SDaLxgXh24enyP2yvVZatx4RoBrXtovNa5f1-dY04f7sTouyOjT-WC2EJj9QOk90bivp5y2gI2PX3RfLDdJy3ylXXSpPwL0n2Uw2CYlHRo-CEPg5FRtG1MNorxhP1b5bqZg6jszQnsZFB4J2bZBlH0IPgWAoCAkajSpENLCDwSuv13JCGfhfp3TjBNWCseoUAR2Oe_y8fqLcWrbcemtpONSQAI2iR0jKgx1GdupvbCVkgFAMNUs-NZNNVuxtLDAIRbEysutS4JwHaqVmrqAnMK1y_HTWHueBNnHvUAbAXx23gvTyXYHfdSjlF32D-l9XOfN8kwybMWp-2OYMz1NppcjV2A-qUnCC4P-YL9NyzJsfdjE3eQ-OMwAwRTjPbHqyB0TWPUkzyasGy8Amyem9iBBBF-vXKwUAPS8kMP7ASdUa7h990Fbqv_ahJqiVqwlZA25fOT_6b1Lvmbgpb2tArwmOQPMR7jC5YYYE9kHUFDMtd92WJ0tI0T7-W2inJ7E8MZfZ_CRnYeZQiSPoSZx0eT-TOWvZDRJ_qf6YbECI2UIiTBp0lSS7TAN966qc9m9x82AKNACQJFNccxwiP_-pQkhhzCRkcUAD53Qt1j0KSNijtfAaeYyQVt4wFrqDemNOK_yjVEzh79KVNWQ9GMO8VLk1nd7BG-uneHaXMwERTNq1cc6490O7xhMuQ3Dj9A7ny6rqPk4aJHH1uBM9u4FpINQ45M_nCue1fcbR54OW8oox91sJ1WlTzflqJwXaAJ-D-T5Kjz1xvNQX5X38xGau37LjtOdVCelFVa-ib9dkobd0U_O5KbgAOG-vriAkCJq7W3XQYpu1GXB0jEWVaM9RkgFNvNEqPn2HnTD-Ku=w660-h880-no?authuser=0"
+                  class="mx-auto d-block"
+                  alt="..."
+                  height="300"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-12 p-5">
+          <div class="text-center titulo">Los Testigos</div>
+          <div
+            class="d-flex justify-content-center text-center flex-column p-3"
+          >
+            <div class="p-3 pb-5 pt-5">
+              <div class="pb-4">
+                <img
+                  src="https://github.com/mvelasquez98/invitacion/raw/master/img/franco-martin.png"
+                  height="262"
+                  width="262"
+                  style="border-radius: 126px"
+                />
+              </div>
+              <div class="text-satisfy h3">Franco Martin</div>
+              <div class="fw-bold color-dorado h5">
+                Testigo del novio, amigo
+              </div>
+            </div>
+            <div class="p-3">
+              <div class="pb-4">
+                <img
+                  src="https://github.com/mvelasquez98/invitacion/raw/master/img/yamila-vigetti.png"
+                  height="262"
+                  width="262"
+                  style="border-radius: 126px"
+                />
+              </div>
+              <div class="text-satisfy h3">Yamila Vigetti</div>
+              <div class="fw-bold color-dorado h5">
+                Testigo de la novia, amiga
+              </div>
             </div>
           </div>
         </div>
-        <div class="bg-white p-3 rounded">
-          <div>Si sos más de la vieja escuela.. :D </div>
-          <div>Te dejamos la famosa y tradicional lista de regalos. Vas a encontrar los regalos y/o adquisiciones que ya
-            recibimos.. para que no seas figurita repetida :O </div>
-          <a class="btn btn-primary boton"
-            href="https://github.com/mvelasquez98/invitacion/raw/master/img/Lista-de-Regalos-1.png" role="button"
-            target="_blank"><i class="fa-solid fa-gift"></i>Lista de Regalos</a>
-        </div>
-      </div>
-      <div class="col-12 text-center pt-5 ps-5 pe-5">
-        <div class="titulo color-dorado">Nuestra boda en Instagram <i class="bi bi-instagram"></i></div>
-        <div class="pt-4 ps-4 pe-4">No hay nada más lindo que poder capturar momentos de un día tan especial. Por eso te
-          pedimos que uses el
-          hashtag <b>#matysolcito</b> en tus publicaciones de feed o stories<br /> ¡Queremos ver tus fotos!</div>
-      </div>
-      <div class="col-12 d-flex justify-content-center text-center">
-        <div class="elfsight-app-db92f56b-d3aa-4ea0-8991-17148d7762d8"></div>
-      </div>
-      <hr class="hr">
-      <div class="col-12 text-center p-5">Una cosa importante, es que nos puedas <b>confirmar si vas al casamiento</b>,
-        así nos
-        resulta mucho más facil la organización.</div>
-      <hr class="hr">
-      <div class="col-12 p-5 d-flex justify-content-center">
-        <div>
-          <div class="d-flex justify-content-center"><img
-              src="https://github.com/mvelasquez98/invitacion/raw/master/img/BAJAR-INVITACION.svg" height="140"
-              width="140"></div>
-          <div><a class="btn btn-primary boton" href="#" role="button" target="_blank">Bajar Invitación</a></div>
-        </div>
-      </div>
-      <div class="col-12 pb-5 d-flex justify-content-center">
-        <div>
-          <div class="d-flex justify-content-center"><img
-              src="https://github.com/mvelasquez98/invitacion/raw/master/img/CONFIRMAR_1.svg" width="140" height="140">
+        <div class="col-12 bg-dorado p-5">
+          <div class="d-flex justify-content-center">
+            <img
+              src="https://github.com/mvelasquez98/invitacion/raw/master/img/gift-07.png"
+              height="140"
+              width="140"
+            />
           </div>
-          <div><a class="btn btn-primary boton" href="https://forms.gle/PuCC9T1DXycBdhYk7" role="button"
-              target="_blank">Confirmar
-              Asistencia</a></div>
+          <div class="text-center titulo text-white ps-5 pe-5 pb-5">
+            Regalos
+          </div>
+          <div class="bg-white p-3 rounded mb-5">
+            El regalo es opcional, la asistencia es obligatoria :), pero si
+            queres tener un detalle con nosotros, que mejor regalo que nuestra
+            luna de miel. Podes hacernos un depósito o transferencia a nuestra
+            cuenta
+            <div>
+              <a
+                class="btn btn-primary collapsed boton"
+                data-bs-toggle="collapse"
+                href="#datosbancarios"
+                role="button"
+                aria-expanded="false"
+                aria-controls="datosbancarios"
+              >
+                Datos Bancarios</a
+              >
+            </div>
+            <div class="#datosbancarios collapse" id="datosbancarios">
+              <div class="card card-body">
+                <div>CBU/CVU: 0000003100064691857174</div>
+                <div>Alias: mat.y.solcito</div>
+                <a
+                  class="btn btn-primary boton"
+                  href="http://link.mercadopago.com.ar/matysolcito"
+                  role="button"
+                  target="_blank"
+                  ><i class="pe-1"
+                    ><img
+                      height="25"
+                      src="https://github.com/mvelasquez98/invitacion/raw/master/img/mercado-pago.png" /></i
+                  >Mercado Pago</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-3 rounded">
+            <div>Si sos más de la vieja escuela.. :D</div>
+            <div>
+              Te dejamos la famosa y tradicional lista de regalos. Vas a
+              encontrar los regalos y/o adquisiciones que ya recibimos.. para
+              que no seas figurita repetida :O
+            </div>
+            <a
+              class="btn btn-primary boton"
+              href="https://github.com/mvelasquez98/invitacion/raw/master/img/Lista-de-Regalos-1.png"
+              role="button"
+              target="_blank"
+              ><i class="fa-solid fa-gift"></i>Lista de Regalos</a
+            >
+          </div>
+        </div>
+        <div class="col-12 text-center pt-5 ps-5 pe-5">
+          <div class="titulo color-dorado">
+            Nuestra boda en Instagram <i class="bi bi-instagram"></i>
+          </div>
+          <div class="pt-4 ps-4 pe-4">
+            No hay nada más lindo que poder capturar momentos de un día tan
+            especial. Por eso te pedimos que uses el hashtag
+            <b>#matysolcito</b> en tus publicaciones de feed o stories<br />
+            ¡Queremos ver tus fotos!
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center text-center">
+          <div class="elfsight-app-db92f56b-d3aa-4ea0-8991-17148d7762d8"></div>
+        </div>
+        <hr class="hr" />
+        <div class="col-12 text-center p-5">
+          Una cosa importante, es que nos puedas
+          <b>confirmar si vas al casamiento</b>, así nos resulta mucho más facil
+          la organización.
+        </div>
+        <hr class="hr" />
+        <div class="col-12 p-5 d-flex justify-content-center">
+          <div>
+            <div class="d-flex justify-content-center">
+              <img
+                src="https://github.com/mvelasquez98/invitacion/raw/master/img/BAJAR-INVITACION.svg"
+                height="140"
+                width="140"
+              />
+            </div>
+            <div>
+              <a
+                class="btn btn-primary boton"
+                href="#"
+                role="button"
+                target="_blank"
+                >Bajar Invitación</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 pb-5 d-flex justify-content-center">
+          <div>
+            <div class="d-flex justify-content-center">
+              <img
+                src="https://github.com/mvelasquez98/invitacion/raw/master/img/CONFIRMAR_1.svg"
+                width="140"
+                height="140"
+              />
+            </div>
+            <div>
+              <a
+                class="btn btn-primary boton"
+                href="https://forms.gle/PuCC9T1DXycBdhYk7"
+                role="button"
+                target="_blank"
+                >Confirmar Asistencia</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-  <script src="js/simplyCountdown.min.js"></script>
-  <script src="js/countdown.js"></script>
-  <script src="js/script.js"></script>
-</body>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">¿Estas listo?</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Si
+            </button>
+            <button type="button" class="btn btn-primary">Si en azul</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/simplyCountdown.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
