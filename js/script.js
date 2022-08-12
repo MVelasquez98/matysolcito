@@ -9,7 +9,7 @@ window.onload = function () {
   // document.getElementsByClassName('eapps-link').style.display = "none!important";
   var myModal = $("#staticBackdrop");
   myModal.modal("show");
-  myModal.on("click", function () {
+ $("#staticBackdrop .modal-footer button").on("click", function () {
     var video = document.getElementById("videotest");
     video.play();
     video.muted = false;
