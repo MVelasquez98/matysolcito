@@ -1,97 +1,141 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --dorado: #d4a413;
+  --dorado: #d4a413;
 }
 
 body {
-    background: #EFEFEF;
-    color: #363639;
-    font-family: 'Work Sans', sans-serif;
+  background: #efefef;
+  color: #363639;
+  font-family: "Work Sans", sans-serif;
 }
 
 @font-face {
-    font-family: 'Satisfy', cursive;
-    src: 'Satisfy-Regular.ttf'
+  font-family: "Satisfy", cursive;
+  src: "Satisfy-Regular.ttf";
 }
 
 .boton {
-    border-radius: 20px !important;
-    background-color: #efb810;
-    border-color: transparent;
+  border-radius: 20px !important;
+  background-color: #efb810;
+  border-color: transparent;
 }
 
 .hr {
-    border: none;
-    height: 6px;
-    width: 100%;
-    color: #f3c332;
-    background-color: #f3c332;
+  border: none;
+  height: 6px;
+  width: 100%;
+  color: #f3c332;
+  background-color: #f3c332;
 }
 
 /*? --Carrousel */
 .carousel-indicators {
-    bottom: -42px;
+  bottom: -42px;
 }
 
 /* ?---- Titulos */
 .titulo {
-    font-family: 'Satisfy';
-    font-size: 43px;
+  font-family: "Satisfy";
+  font-size: 43px;
 }
 
 .text-satisfy {
-    font-family: 'Satisfy'
+  font-family: "Satisfy";
 }
 
 .bg-dorado {
-    background-color: var(--dorado) !important;
+  background-color: var(--dorado) !important;
 }
 
 .color-dorado {
-    color: var(--dorado) !important;
+  color: var(--dorado) !important;
 }
 
 /* ? ----- Cuenta Regresiva ----- */
 #cuenta {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .simply-section {
-    background: #fff;
-    width: 45px;
-    height: 45px;
-    margin: 0 20px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: #fff;
+  width: 45px;
+  height: 45px;
+  margin: 0 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .simply-amount {
-    display: block;
-    font-size: 20px;
-    font-weight: 700;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .simply-word {
-    display: none;
-    font-weight: 300;
-    font-size: 20px;
+  display: none;
+  font-weight: 300;
+  font-size: 20px;
 }
 
 .tiempo {
-    width: 45px;
-    height: 45px;
-    margin: 0 20px;
+  width: 45px;
+  height: 45px;
+  margin: 0 20px;
 }
 
-.modal-backdrop
-{
-    opacity:1 !important;
+.modal-backdrop {
+  opacity: 1 !important;
+}
+/* ? ----- Icons ----- */
+.icons {
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+}
+#dresscode {
+  background: url(img/DRESS-CODE_1.svg);
+}
+#partycode {
+  background: url(img/PARTY-CODE_1.svg);
+}
+#confirmacion {
+  background: url(img/CONFIRMAR_1.svg);
+}
+#bajar {
+  background: url(img/BAJAR-INVITACION.svg);
+}
+
+@supports (-webkit-mask: url("")) or (mask: url("")) {
+  #dresscode {
+    -webkit-mask: url(img/DRESS-CODE_1.svg) no-repeat;
+    mask: url(img/DRESS-CODE_1.svg);
+    mask-size: cover;
+    background: var(--dorado);
+  }
+  #partycode {
+    -webkit-mask: url(img/PARTY-CODE_1.svg) no-repeat;
+    mask: url(img/PARTY-CODE_1.svg);
+    mask-size: cover;
+    background: var(--dorado);
+  }
+  #confirmacion {
+    -webkit-mask: url(img/CONFIRMAR_1.svg) no-repeat;
+    mask: url(img/CONFIRMAR_1.svg);
+    mask-size: cover;
+    background: var(--dorado);
+  }
+  #bajar {
+    -webkit-mask: url(img/BAJAR-INVITACION.svg) no-repeat;
+    mask: url(img/BAJAR-INVITACION.svg);
+    mask-size: cover;
+    background: var(--dorado);
+  }
 }
